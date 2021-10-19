@@ -21,12 +21,9 @@ namespace tabuleiro
             Pecas = new Peca[lines, columns];
         }
 
-        public override string ToString()
+        public Peca Peca(int line, int column)
         {
-
-            return Lines
-                + ", "
-                + Columns;
+            return Pecas[line, column];
         }
     }
 }
