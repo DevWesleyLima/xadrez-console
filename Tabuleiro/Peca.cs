@@ -3,24 +3,25 @@ namespace tabuleiro
 {
     class Peca
     {
-        public Posicao Position { get; set; }
-        public Cor Colour { get; protected set; }
-        public int MovQuantity { get; protected set; }
-        public Tabuleiro Chessboard { get; set; }
+        public Posicao Posicao { get; set; }
+        public Cor Cor { get; protected set; }
+        public int QteMovimentos { get; protected set; }
+        public Tabuleiro Tab { get; protected set; }
 
         public Peca()
         {
-            Colour = 0;
-            MovQuantity = 0;
+            Cor = 0;
+            QteMovimentos = 0;            
             
         }
 
-        public Peca(Posicao position, Cor colour, Tabuleiro chessboard)
+        public Peca(Tabuleiro tab, Cor cor)
         {
-            this.Position = position;
-            this.Colour = colour;
-            this.MovQuantity = 0;
-            Chessboard = chessboard;
+            this.Posicao = null;
+            this.Tab = tab;
+            this.Cor = cor;
+            this.QteMovimentos = 0;
+            
         }
     }
 }

@@ -3,27 +3,27 @@ namespace tabuleiro
 {
     class Posicao
     {
-        public int Line { get; set; }
-        public int Column { get; set; }
+        public int Linha { get; set; }
+        public int Coluna { get; set; }
 
         public Posicao()
         {
-            Line = 0;
-            Column = 0;
+            Linha = 0;
+            Coluna = 0;
         }
 
-        public Posicao(int line, int column)
+        public Posicao(int linha, int coluna)
         {
-            Line = line;
-            Column = column;
+            Linha = linha;
+            Coluna = coluna;
         }
 
         public override string ToString()
         {
 
-            return Line
+            return Linha
                 + ", "
-                + Column;
+                + Coluna;
         }
     }
 }

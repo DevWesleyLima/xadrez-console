@@ -3,27 +3,33 @@ namespace tabuleiro
 {
     class Tabuleiro
     {
-        public int Lines { get; set; }
-        public int Columns { get; set; }
+        public int Linhas { get; set; }
+        public int Colunas { get; set; }
         public Peca[,] Pecas;
 
         public Tabuleiro()
         {
-            Lines = 0;
-            Columns = 0;
+            Linhas = 0;
+            Colunas = 0;
         }
 
 
-        public Tabuleiro(int lines, int columns)
+        public Tabuleiro(int linhas, int colunas)
         {
-            this.Lines = lines;
-            this.Columns = columns;
-            Pecas = new Peca[lines, columns];
+            this.Linhas = linhas;
+            this.Colunas = colunas;
+            Pecas = new Peca[linhas, colunas];
         }
 
-        public Peca Peca(int line, int column)
+        public Peca Peca(int linha, int coluna)
         {
-            return Pecas[line, column];
+            return Pecas[linha, coluna];
+        }
+
+        public void ColocarPeca(Peca p, Posicao pos)
+        {
+            Pecas[pos.Linha, pos.Coluna] = p;
+            p.Posicao = pos;
         }
     }
 }

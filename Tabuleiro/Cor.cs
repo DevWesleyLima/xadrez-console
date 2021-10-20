@@ -3,17 +3,16 @@ namespace tabuleiro
 {
     enum Cor : int
     {
-        White = 0, 
-        Black = 1,
-        Yellow = 2,
-        Blue = 3,
-        Red = 4,
-        Green = 5,
-        Orange = 6,
-        Gold = 7,
-        Grey = 8,
-        Silver = 9,
-        Purple = 10,
-        Aqua = 11
+        Branco = 0, 
+        Preto = 1,
+        Amarelo = 2,
+        Azul = 3,
+        Vermelho = 4,
+        Verde = 5,
+        Laranja = 6,
+        Dourado = 7,
+        Cinza = 8,
+        Prata = 9,
+        Roxo = 10
     }
 }
