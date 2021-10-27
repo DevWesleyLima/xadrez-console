@@ -11,6 +11,7 @@ namespace tabuleiro
         {
             Linhas = 0;
             Colunas = 0;
+            Pecas = null;
         }
 
 

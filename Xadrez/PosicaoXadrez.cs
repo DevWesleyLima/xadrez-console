@@ -7,6 +7,12 @@ namespace xadrez
         public char Coluna { get; set; }
         public int Linha { get; set; }
 
+        public PosicaoXadrez()
+        {
+            Coluna = 'a';
+            Linha = 1;
+        }
+
         public PosicaoXadrez(char coluna, int linha)
         {
             this.Coluna = coluna;

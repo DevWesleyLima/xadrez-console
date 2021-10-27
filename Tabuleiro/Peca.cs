@@ -10,9 +10,10 @@ namespace tabuleiro
 
         public Peca()
         {
+            Posicao = null;
             Cor = 0;
-            QteMovimentos = 0;            
-            
+            QteMovimentos = 0;
+            Tab = null;            
         }
 
         public Peca(Tabuleiro tab, Cor cor)
